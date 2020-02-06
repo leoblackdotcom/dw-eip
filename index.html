@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>EIP | Epiphany Intelligence Platform</title>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	
+	<!-- Google Fonts -->
+	<link href='//fonts.googleapis.com/css?family=Montserrat:200,300,400,400i,500,700' rel='stylesheet'>
+
+	<!-- Css -->
+	<link rel="stylesheet" href="css/style.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+</head>
+
+<body data-spy="scroll" data-offset="60" data-target=".nav__holder" id="home" itemscope itemtype="http://schema.org/WebPage">
+
+	<!-- Preloader -->
+	<div class="loader-mask">
+		<div class="loader">
+			"Loading..."
+		</div>
+	</div>  
+
+	<!-- Header -->
+	<header class="nav nav--always-fixed" itemtype="http://schema.org/WPHeader" itemscope>
+
+		<div class="nav__holder nav--sticky nav--align-center">
+			<div class="container-fluid container-semi-fluid">
+				<div class="flex-parent">
+
+					<div class="nav__header clearfix">
+						<!-- Logo -->
+						<div class="logo-wrap local-scroll">
+							<a href="#home" class="logo__url">
+								<img class="logo" src="img/logo_alt.svg" alt="logo" itemtype="http://schema.org/Organization" itemscope>
+							</a>
+						</div>
+
+						<button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="nav__icon-toggle-bar"></span>
+							<span class="nav__icon-toggle-bar"></span>
+							<span class="nav__icon-toggle-bar"></span>
+						</button>
+
+					</div> <!-- end nav-header -->
+					
+					<!-- Navbar -->
+					<nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse" itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope">              
+						<ul class="nav__menu local-scroll" id="onepage-nav">
+							<li>
+								<a href="https://www.digitalware.com" class="nav-link">Home</a>
+							</li>
+							<li class="nav__dropdown">
+								<a href="#intelligence" class="nav-link active" aria-haspopup="true">Platform</a>
+								<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>
+								<ul class="nav__dropdown-menu">
+									<li>
+										<a href="#intelligence">
+											<span class="nav__dropdown-menu-label">Intelligence</span>
+										</a>
+									</li>
+									<li>
+										<a href="#analysis">
+											<span class="nav__dropdown-menu-label">Analysis</span>
+										</a>
+									</li>
+									<li>
+										<a href="#evolution">
+											<span class="nav__dropdown-menu-label">Evolution</span>
+										</a>
+									</li>
+									<!--li>
+										<a href="#modules">
+											<span class="nav__dropdown-menu-label">Modules</span>
+										</a>
+									</li-->
+
+								</ul>
+							</li>
+							<!--li>
+								<a href="#intelligence" class="nav-link">Intelligence</a>
+							</li>
+							<li>
+								<a href="#analysis" class="nav-link">Analysis</a>
+							</li>
+							<li>
+								<a href="#evolution" class="nav-link">Evolution</a>
+							</li-->
+							<li>
+								<a href="#modules" class="nav-link">Modules</a>
+							</li>
+							<li>
+								<a href="#features" class="nav-link">Features</a>
+							</li>
+							<!--li>
+								<a href="#features" class="nav-link">Features</a>
+							</!--li>
+							<li>
+								<a href="#blog" class="nav-link">News + Downloads</a>
+							</li-->
+							<!--li class="nav__dropdown">
+								<a href="#" class="nav-link" aria-haspopup="true">Pages</a>
+								<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>
+								<ul class="nav__dropdown-menu">
+									<li>
+										<a href="projects.html">
+											<span class="nav__dropdown-menu-label">Projects</span>
+										</a>
+									</li>
+									<li>
+										<a href="single-project.html">
+											<span class="nav__dropdown-menu-label">Single Project</span>
+										</a>
+									</li>
+									<li>
+										<a href="blog.html">
+											<span class="nav__dropdown-menu-label">Blog</span>
+										</a>
+									</li>
+									<li>
+										<a href="single-post.html">
+											<span class="nav__dropdown-menu-label">Single Post</span>
+										</a>
+									</li>
+								</ul>
+							</li-->
+							<li>
+								<a href="#" class="nav-link" data-toggle="modal" data-target="#contact-form-modal"><b>Get Started</b></a>
+							</li>
+						</ul> <!-- end menu -->
+
+
+						<!-- Mobile Socials -->
+						<div class="nav__mobile-socials d-lg-none">
+							<div class="socials">
+								<a href="https://www.facebook.com/Digitalware-Inc-109996323817947" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+								<a href="https://www.linkedin.com/company/digitalware-inc/" class="social social-linkedin" aria-label="linkedin" title="linkedin" target="_blank"><i class="ui-linkedin"></i></a>
+							</div>
+						</div>
+
+					</nav> <!-- end nav-wrap -->
+
+					<!-- Socials -->
+					<div class="nav__socials flex-child d-none d-lg-block">
+						<div class="socials right">
+							<a href="https://www.facebook.com/Digitalware-Inc-109996323817947" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+							<a href="https://www.linkedin.com/company/digitalware-inc/" class="social social-linkedin" aria-label="linkedin" title="linkedin" target="_blank"><i class="ui-linkedin"></i></a>
+						</div>
+					</div>
+
+				</div> <!-- end flex-parent -->
+			</div> <!-- end container -->
+
+		</div>
+	</header> <!-- end navigation -->
+
+	<main class="main-wrap">
+		<div class="content-wrap">
+
+			<!-- Revolution Slider -->
+			<section class="p-0" id="eip-banner"> 
+
+
+									<!-- HERO TITLE -->
+									<div class="eb-title">
+											<h2>Epiphany Intelligence Platform</h2>
+											<p class="subhead">Understand all the risks inside your enterprise, not just the vulnerabilities.</p>
+											<p>Using the next generation capabilities of big data analysis and correlation EIP can find risks before the attacker finds them.</p>
+											<p>EIP’s agentless risk hunting capabilities operate as an overlay to existing security and network management tools allowing for rapid integration within the existing security enterprise.</p>	
+										</div>
+							
+							<div class="local-scroll">
+								<a href="#intro" class="scroll-down">
+									<i class="ui-arrow-scroll-down"></i>
+								</a>
+							</div>
+	
+							<div class="video-overlay"></div>
+							<video autoplay loop muted playsinline>
+								<source src="videos/video.mp4" type="video/mp4">
+								<source src="videos/video.ogv" type="video/ogv">
+								<source src="videos/video.webm" type="video/webm">
+								Your browser does not support the <code>video</code> element.
+							</video>
+
+				</section>
+
+			<!-- Intro -->
+			<section id="intro" class="intro bg-dark bg-pattern angle angle--top angle--dark">	
+				<div class="container">
+					<div class="animate">
+						<div class="animate-container">    
+							<p class="intro-p intro-p-b"><b>
+									Fatigued by scanners and consultants?
+								</b></p>
+							<h3 class="intro-p">
+								Awareness <span>Powers</span> Protection
+							</h3>
+							<p class="intro-p">
+								The only Intelligence Platform on the market that combines the attack mentality of the adversary with that of the current state of every communicating asset in the enterprise in an agentless design. 
+							</p>
+							<a href="#" class="btn btn--lg btn--stroke" data-toggle="modal" data-target="#contact-form-modal">Expand Your View</a>
+						</div>
+					</div>
+				</div>			
+			</section> <!-- end intro -->
+
+			<!-- Service Boxes -->
+			<section id="intelligence" class="pb-72 bg-dark">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="title-row">
+
+									<h3 class="section-subtitle section-subtitle--line">INTELLIGENCE</h3>
+									<h2 class="section-title">From today's threat landscape.</h2>
+									<p class="section-description">By understanding the current state of the enterprise, future impacts are avoidable.</p>
+									<div class="content-img">
+										<!--img src="img/node-map.svg" /-->
+
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 offset-lg-1">
+
+									<div class="row">
+										<div class="col-lg-6">
+												<div class="service">
+													<h4 class="service__title">Threat Analysis</h4>
+													<p class="service__text">Integrated Risk and Threat Intelligence from public and private services allows for real-time knowledge and awareness of potential impacts.</p>
+												</div>
+											</div>
+										<div class="col-lg-6">
+												<div class="service">
+													<h4 class="service__title">Threat Prevention</h4>
+													<p class="service__text">Understand the consequences of a potential change to the network or mitigation controls through limitless outcome analysis.</p>
+												</div>
+											</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">							
+												<div class="service">
+													<h4 class="service__title">Risk Analysis</h4>
+													<p class="service__text">Unmatched ability to see, understand, evaluate, categorize, and prioritize actual risk conditions inside the environment from any communicating nodes (desktop, server, laptop, mobile, ICS, and IoT).</p>
+												</div>								
+											</div>
+										<div class="col-lg-6">
+												<div class="service">
+													<h4 class="service__title">Risk Prevention</h4>
+													<p class="service__text">Continuous evaluation of every potential attack-path within an environment highlighting which actions can be taken to mitigate the most risk.</p>
+												</div>
+											</div>
+									</div>
+
+						</div>
+					</div>
+
+				</div>
+			</section> <!-- end service boxes -->
+
+			<!-- Service Boxes -->
+			<section id="analysis" class="pb-73">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="title-row">
+
+										<h3 class="section-subtitle section-subtitle--line">ANALYSIS</h3>
+										<h2 class="section-title">Don't limit yourself with under-utilized tools.</h2>
+										<p class="section-description">EIP can ingest almost any type of data and make it meaningful in protecting your environment from compromise.</p>
+										<div class="content-img">
+											<!--img src="img/nodes-organized.svg" /-->
+										</div>
+
+								</div>
+							</div>
+							<div class="col-lg-5 offset-lg-1">
+
+										<div class="row">
+											<div class="col-lg-6">							
+													<div class="service">
+														<h4 class="service__title">Network Risk</h4>
+														<p class="service__text">Display the attack chains that exist between isolated networks via domain relationships and exposed services.</p>
+													</div>								
+												</div>
+											<div class="col-lg-6">
+													<div class="service">
+														<h4 class="service__title">Secure Integration</h4>
+														<p class="service__text">Collecting and correlating data from sources that cross operational boundaries without affecting the security state of the networks.</p>
+													</div>
+												</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-6">
+													<div class="service">
+														<h4 class="service__title">Threat Detection</h4>
+														<p class="service__text">Find risks that are hidden across your network and not detected by normal scan tools.</p>
+													</div>
+												</div>
+											<div class="col-lg-6">
+													<div class="service">
+														<h4 class="service__title">IoT Risk</h4>
+														<p class="service__text">Highlighting mobile assets interacting with the enterprise that may cause risks or impacts.</p>
+													</div>
+												</div>
+										</div>
+
+							</div>
+
+						</div>
+	
+					</div>
+				</section> <!-- end service boxes -->
+
+			<!-- Results -->
+			<section class="section-results bg-gradient-bottom" style="background-image: url('img/footerbg2sm.jpg');">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-3 results-col">
+							<div class="results">
+								<div class="results__counter">
+									<span class="results__number" data-from="0" data-to="50">50</span>
+									<span class="results__suffix">M+</span>
+								</div>
+								<p class="results__text">Scales to 50M+ data points without the need for increased local infrastructure.</p>
+							</div>
+						</div>
+						<div class="col-lg-3 results-col">
+							<div class="results">
+								<div class="results__counter">
+									<span class="results__number" data-from="0" data-to="95">95</span>
+									<span class="results__suffix">%</span>
+								</div>              
+								<p class="results__text">Reduction in the time to risk identification.</p>
+							</div>
+						</div>
+						<div class="col-lg-3 results-col">
+							<div class="results">
+								<div class="results__counter">
+									<span class="results__number" data-from="0" data-to="30">30</span>
+									<span class="results__suffix">+</span>
+								</div>
+								<p class="results__text">Different data sources consumable.</p>
+							</div>
+						</div>
+						<div class="col-lg-3 results-col">
+							<div class="results">
+								<div class="results__counter">
+									<span class="results__number" data-from="0" data-to="10">10</span>
+									<span class="results__suffix">+</span>
+								</div>
+								<p class="results__text">Different industry specific risk profiles.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> <!-- end results -->    
+
+			
+			<!-- Related Projects -->
+			<section class="section-related-projects pb-96 bg-dark">
+					<div class="container">
+	
+						<div class="row justify-content-center">
+							<div class="col-lg-12">
+								<div class="title-row text-center">
+									<h2 class="section-title">The Digitalware Difference</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-md-2">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">              
+										<i class="service__icon o-expand-1"></i>
+										<h4 class="related-project__title title-underline">
+											Limitless <br/>Scale
+										</h4>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-2">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">              
+										<h4 class="related-project__title title-underline">
+											<i class="service__icon o-sales-up-1"></i>
+											Maximize <br/>Tool ROI
+										</h4>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-2">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">              
+										<h4 class="related-project__title title-underline">
+											<i class="service__icon o-visible-1"></i>
+											Increase Risk Awareness
+										</h4>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-2">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">              
+										<h4 class="related-project__title title-underline">
+											<i class="service__icon o-security-shield-1"></i>
+											Improve Mitigation Effectiveness
+										</h4>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-2">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">              
+										<h4 class="related-project__title title-underline">
+											<i class="service__icon o-dollar-sign-1"></i>
+											Reduce Analyst Overhead
+										</h4>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section> <!-- end related projects -->
+
+			<!-- Service Boxes -->
+			<section id="evolution" class="pb-74 sec-evolution">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="title-row">
+
+										<h3 class="section-subtitle section-subtitle--line">EVOLUTION</h3>
+										<h2 class="section-title">Infinite ability to scale.</h2>
+										<p class="section-description">Not limited by asset operating systems, locations or the size of the enterprise.</p>
+
+								</div>
+							</div>
+							<div class="col-lg-12">
+
+										<div class="row icon-row">
+											<div class="col-lg-12">
+												<div class="row">
+													<div class="col-lg-4">
+															<div class="service">
+																<h4 class="service__title">Artifical Intelligence</h4>
+																<p class="service__text">Machine Learning allows for the detection of non-obvious conditions within the data sets that a human analyst may never find.</p>
+															</div>
+														</div>
+													<div class="col-lg-4">
+															<div class="service">
+																<h4 class="service__title">On Watch</h4>
+																<p class="service__text">Automated awareness allows new threat intelligence events to quickly be analyzed across the environment for impact without the need of customer intervention.</p>
+															</div>
+														</div>
+													<div class="col-lg-4">							
+															<div class="service">
+																<h4 class="service__title">Expert Support</h4>
+																<p class="service__text">Digitalware’s team of offensive security experts can quickly write custom risk and attack conditions that are available to all customers instantaneously.</p>
+															</div>								
+														</div>
+												</div>
+											</div>
+											<div class="col-lg-12">
+													<div class="content-img">
+															<img src="img/node-map.svg" />
+														</div>
+												</div>
+										</div>
+
+							</div>
+						</div>
+	
+					</div>
+				</section> <!-- end service boxes -->
+
+
+			<!-- Modules-->
+			<section class="section-related-projects eip-modules" id="modules">
+					<div class="container">
+	
+						<div class="row justify-content-center">
+							<div class="col-lg-6">
+								<div class="title-row text-center">
+									<h2 class="section-title">EIP Modules Included</h2>
+								</div>
+							</div>
+						</div>
+	
+						<div class="row module-boxes justify-content-center align-items-stretch align-content-stretch">
+							</style>
+							<div class="col-md-12 col-lg-4">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">       
+										<img class="eip-mod-icon" src="img/eip_modules_tight_orbital-logomark.svg" />
+										<h4 class="related-project__title title-underline">
+											Orbital
+										</h4>
+										<p>Seeing the world through the eyes of EIP you can understand your risk at any moment with actionable results.</p>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-12 col-lg-4">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">  
+										<img class="eip-mod-icon" src="img/eip_modules_tight_link-logomark.svg" />    
+										<h4 class="related-project__title title-underline">
+											Link
+										</h4>
+										<p>Analyze and understand the impacts of risk conditions across domains and boundaries without breaking the security model.</p>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-12 col-lg-4">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">
+										<img class="eip-mod-icon" src="img/eip_modules_tight_recon-logomark.svg" />         
+										<h4 class="related-project__title title-underline">
+											Recon
+										</h4>
+										<p>Access to the results of Digitalware Fusion Center’s analysis of incoming threats and risks.</p>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-12 col-lg-4">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">              
+										<img class="eip-mod-icon" src="img/eip_modules_tight_alpha-red-logomark.svg" />
+										<h4 class="related-project__title title-underline">
+											Alpha Red
+										</h4>
+										<p>See your environment through the eyes of an adversary and know how to stop them with continuous automated compromise analysis.</p>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-12 col-lg-4">
+								<article class="related-project" itemscope itemtype="http://schema.org/Article">
+									<div class="related-project__body">              
+										<img class="eip-mod-icon" src="img/eip_modules_tight_alpha-blue-logomark.svg" />
+										<h4 class="related-project__title title-underline">
+											Alpha Blue
+										</h4>
+										<p>Not all risks are caused by vulnerabilities. Understand where misconfigurations, data exposure, and social engineering impacts your environment.</p>
+									</div>
+								</article>
+							</div>
+					
+
+						</div>
+					</div>
+				</section> <!-- modules -->
+	
+	
+			<!-- Service Boxes -->
+			<section id="features" class="pb-74">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="title-row">
+
+										<h3 class="section-subtitle section-subtitle--line">FEATURES</h3>
+										<h2 class="section-title">AI-powered risk hunting.</h2>
+										<p class="section-description">Artificial Intelligence and Machine Learning give organizations unparalleled control of their risk.</p>
+
+								</div>
+							</div>
+							<div class="col-lg-12">
+
+										<div class="row icon-row">
+											<div class="col-lg-5">
+													<div class="content-img">
+															<img src="img/e-eye-p.svg" />
+														</div>
+												</div>
+											<div class="col-lg-7">
+												<div class="row">
+													<div class="col-lg-12">
+															<div class="service">
+																<h4 class="service__title">Risk Conditions</h4>
+																<p class="service__text">Find known and unknown risk conditions throughout the environment including attack paths, exposed data, misconfigurations, and malware.</p>
+															</div>
+														</div>
+													<div class="col-lg-12">
+															<div class="service">
+																<h4 class="service__title">Threat Intelligence</h4>
+																<p class="service__text">Combines the latest in Threat Intelligence and Risk Intelligence to strengthen an organizations ability to prevent impacts.</p>
+															</div>
+														</div>
+													<div class="col-lg-12">							
+															<div class="service">
+																<h4 class="service__title">Efficient</h4>
+																<p class="service__text">Eliminates wasted Analyst effort on correlating tremendous amounts of data.</p>
+															</div>								
+														</div>
+													<div class="col-lg-12">							
+															<div class="service">
+																<h4 class="service__title">Unobtrusive</h4>
+																<p class="service__text">Works without ever impacting the operational network or endpoints.</p>
+															</div>								
+														</div>
+												</div>
+											</div>
+
+										</div>
+
+							</div>
+						</div>
+	
+					</div>
+				</section> <!-- end service boxes -->
+
+			<!-- From Blog -->
+			<section class="section-from-blog pb-96 angle angle--top" id="downloads">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-12">
+							<div class="title-row">
+								<h3 class="section-subtitle section-subtitle--line">DOWNLOADS</h3>
+								<h2 class="section-title">Related Information</h2>
+								<p class="section-description">Here are some reading materials to learn more about The Epiphany Intelligence Platform.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="animate">
+								<div class="animate-container">
+									<article class="entry" itemscope itemtype="http://schema.org/Article">
+										<div class="entry__header hover-shrink">
+											<a href="_dl/Scout-Risk-Hunting-from-Digitalware.pdf" target="_blank" class="entry__img-url hover-shrink--shrink">
+												<img src="img/thumbs-06.jpg" class="entry__img hover-shrink--zoom" itemprop="image" alt="">
+											</a>
+										</div>
+										<div class="entry__body">
+											<h4 class="entry__title title-underline">
+												<a href="_dl/Scout-Risk-Hunting-from-Digitalware.pdf" target="_blank" itemprop="headline">Scout: Risk Hunting</a>
+											</h4>              
+											<div class="entry__meta">
+												<span class="entry__meta-item entry__meta-date" itemprop="datePublished" content="2019-11-13">WHITEPAPER PDF (2.3mb)</span>             
+											</div> 
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="animate">
+								<div class="animate-container">
+									<article class="entry" itemscope itemtype="http://schema.org/Article">
+										<div class="entry__header hover-shrink">
+											<a href="_dl/Epiphany-Intelligence-Platform-Digitalware-Product.pdf" target="_blank" class="entry__img-url hover-shrink--shrink">
+												<img src="img/thumbs-07.jpg" class="entry__img hover-shrink--zoom" itemprop="image" alt="">
+											</a>
+										</div>
+										<div class="entry__body">
+											<h4 class="entry__title title-underline">
+												<a href="_dl/Epiphany-Intelligence-Platform-Digitalware-Product.pdf" target="_blank" itemprop="headline">EIP: An Evolution in Risk Awareness</a>
+											</h4>           
+											<div class="entry__meta">
+												<span class="entry__meta-item entry__meta-date" itemprop="datePublished" content="2019-11-13">DATASHEET PDF (2.5mb)</span>                
+											</div>  
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="animate">
+								<div class="animate-container">
+									<article class="entry" itemscope itemtype="http://schema.org/Article">
+										<div class="entry__header hover-shrink">
+											<a href="_dl/EIP-Vulnerability-Management-Data-Flow.pdf" target="_blank" class="entry__img-url hover-shrink--shrink">
+												<img src="img/thumbs-08.jpg" class="entry__img hover-shrink--zoom" itemprop="image" alt="">
+											</a>
+										</div>
+										<div class="entry__body">
+											<h4 class="entry__title title-underline">
+												<a href="_dl/EIP-Vulnerability-Management-Data-Flow.pdf" target="_blank" itemprop="headline">EIP: Enhanced VM Data Flow</a>
+											</h4>                
+											<div class="entry__meta">
+												<span class="entry__meta-item entry__meta-date" itemprop="datePublished" content="2019-11-13">DATASHEET PDF (1.3mb)</span>             
+											</div>    
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section> <!-- end from blog -->
+
+		</div> <!-- end content wrap -->
+
+		<!-- Footer -->
+		<footer class="footer bg-dark bg-pattern" itemtype="http://schema.org/WPFooter" itemscope>
+			<div class="container">
+				<div class="footer__widgets">
+					<div class="row">
+
+						<div class="col-lg-4 col-md-6">
+							<div class="widget widget-about-us">
+								<a href="mailto:info@digitalware.com" class="widget-about-us__email">info@digitalware.com</a>
+								<a href="tel:8007944985" class="widget-about-us__phone">(800) 794-4985</a>
+								<!--div class="socials mt-32">
+										<a href="https://www.facebook.com/DigitalwareInc" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+										<a href="https://www.linkedin.com/company/digitalware-inc/" class="social social-linkedin" aria-label="linkedin" title="linkedin" target="_blank"><i class="ui-linkedin"></i></a>               
+								</div-->
+							</div>
+						</div> <!-- end about us -->
+
+
+						<div class="col-lg-4 col-md-6">
+							<div class="widget text-center text-md-left">
+								<h3 class="widget-cta__title white mb-32">Expand your view.</h3>
+								<a href="#" class="btn btn--lg btn--stroke contact-form-trigger" data-toggle="modal" data-target="#contact-form-modal">
+									<span>Get Started</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<div class="widget widget-address">
+								<address class="widget-address__address">
+								One Penn Plaza<br>
+								New York, NY 10119</address>
+							</div>
+						</div>           
+
+					</div>
+				</div>    
+			</div> <!-- end container -->
+
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="copyright-wrap text-center">
+						<span class="copyright">
+							&copy;2020 Digitalware, Inc.
+						</span>
+					</div>            
+				</div>
+			</div> <!-- end footer bottom -->
+		</footer> <!-- end footer -->
+
+		<div class="footer-placeholder" id="contact"></div>
+
+		<!-- Contact Form -->
+		<div class="modal fade contact-form-modal" id="contact-form-modal" role="dialog" aria-label="Contact Form Modal" aria-hidden="true">
+			<div class="modal-dialog contact-form-modal__dialog" role="document">
+				<div class="modal-content contact-form-modal__content">
+
+					<button type="button" class="close contact-form-modal__close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+
+					<div class="modal-body contact-form-modal__body" style="text-align: center;">
+						<b style="font-size: 48px; display: block; text-align: center;">(800) 794-4985</b><br/><br/>
+						<a href="mailto:info@digitalware.com">info@digitalware.com</a>
+						<!--form id="contact-form" class="contact-form" method="post" action="contact.php">
+							<div class="row row-16">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="name">Name<abbr>*</abbr></label>
+										<input type="text" name="NAME" id="name" required="">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="email">Email<abbr>*</abbr></label>
+										<input type="email" name="EMAIL" id="email" required="">
+									</div>
+								</div>
+							</div>
+
+							<label for="message">Message<abbr>*</abbr></label>
+							<textarea name="MESSAGE" id="message" rows="6"></textarea>              
+							<div class="gdpr-checkbox">
+								<label class="gdpr-checkbox__label">
+									<input class="gdpr-checkbox__input" name="AGREE_TO_TERMS" type="checkbox" value="1" required="">
+									<span class="gdpr-checkbox__text">I agree to storage of my email according to <a href="https://digitalware.com/privacy-policy/" rel="nofollow" target="_blank">Privacy Policy</a>
+									</span>
+								</label>
+							</div>
+							<div class="text-center">
+								<input id="contact-form__submit" type="submit" class="btn btn--lg btn--color" value="Send Message">
+							</div>
+							
+							<div id="contact-form__message" class="contact-form__message" role="alert"></div>
+							
+						</form-->
+					</div>
+				</div>
+			</div>
+		</div> <!-- end contact form -->
+
+
+		<div id="back-to-top">
+			<a href="#top"><i class="ui-arrow-up"></i></a>
+		</div>
+
+	</main> <!-- end main wrapper -->
+	
+
+	<!-- jQuery Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+		
+</body>
+</html>

@@ -1,0 +1,98 @@
+// **** set color scheme ****
+// ---- swatch
+// **** set theme colors ****
+// ---- background
+// ---- text
+// ---- link
+// ---- button
+
+// page bg = page container
+// wrap bg = content wrapper
+
+// idle = stationary link
+// hover = links hovered by mouse
+// press = link while pressed down by touch or mouse
+// focus = link while selected after being pressed
+
+// color scheme
+
+$setSwatch: (
+  swatch: (
+    0: #393839,
+    1: #1b75bc,
+    2: #b7b7b9,
+    3: #00b6f1,
+    4: #b0c836,
+    5: #f58220
+  )
+) !default;
+$fether: map-merge($fether, $setSwatch);
+@function swatch($input: 1) {
+  @return map-get(map-get($setSwatch, swatch), $input);
+}
+
+// theme colors
+// ~ CURRENTLY NOT BEING USED (06/02/19) ~
+$setTheme: (
+  theme: (
+    background: (
+      body: #e6e6e6,
+      page: null,
+      wrap: null,
+      utility: swatch(1),
+      header: none,
+      footer: swatch(1)
+    ),
+    text: (
+      body: cast(dark 56%),
+      title: cast(dark),
+      utility: cast(light 40%),
+      header: cast(light),
+      footer: cast(light 40%)
+    ),
+    link: (
+      body: (
+        idle: swatch(5),
+        hover: cast(swatch(5) 450),
+        press: cast(swatch(5) 400),
+        focus: cast(swatch(5) 550)
+      ),
+      utility: (
+        idle: cast(light),
+        hover: swatch(5),
+        press: cast(swatch(5) 450),
+        focus: cast(swatch(5) 550)
+      ),
+      header: (
+        idle: null,
+        hover: null,
+        press: null,
+        focus: null
+      ),
+      footer: (
+        idle: cast(light),
+        hover: swatch(5),
+        press: null,
+        focus: null
+      )
+    ),
+    button: (
+      1: (
+        background: swatch(1),
+        text: cast(light),
+        accent: swatch(101)
+      ),
+      2: (
+        background: swatch(2),
+        text: cast(dark),
+        accent: swatch(101)
+      ),
+      3: (
+        background: swatch(4),
+        text: cast(dark secondary),
+        accent: null
+      )
+    )
+  )
+) !default;
+$fether: map-merge($fether, $setTheme);
